@@ -1,0 +1,60 @@
+imageRowIncrease: 1
+imageColIncrease: 1
+cameraRealiableDis: 8 
+pointCloudLeafSize: 0.2
+start_frame: 3603
+end_frame: 3659 
+
+mapSave: true
+data_folder: "/home/zjl/semantic_3d_avp_ws/src/semantic_3d_avp/data/parking1_data/"
+scene: 2  #yt 1 zjg1 2 zjg2 3 yq 4
+localization_folder: "/home/zjl/semantic_3d_avp_ws/src/semantic_3d_avp/data/localization_parking1/"
+odomKeyFramDisThresh: 0.1 #0.1
+odomKeyFramAngThresh: 5
+InvalidColorThresh: 60
+#IcpMaximumIterations最大迭代次数 IcpMaxCorrespondenceDistance搜索对应点的最大距离 IcpTransformationEpsilon收敛条件，当前位姿与上次位姿插值 IcpEuclideanFitnessEpsilon均方误差和
+useICP: false
+IcpMaxCorrespondenceDistance: 10 #10 1
+IcpMaximumIterations: 100
+IcpTransformationEpsilon: 1e-8 #1e-8
+IcpEuclideanFitnessEpsilon: 1e-3 #0.01 #0.01
+icpFitnessScoreThresh: 2000
+useNDT: false
+uselidar: false
+myuseNDT_ICP: false
+useplane: true
+usemyICP: false
+#ndtResolution网格大小 
+ndtTransformationEpsilon: 0.01
+ndtResolution: 1.0
+ndtFitnessScoreThresh: 10
+useNDT_ICP: true
+useNDT_GICP: false
+useNDT_PICP: false
+use_sac_ndt: false
+useglobalfilter: true
+cube_localization: true
+cube_ass: false
+imagecutrow: 0 
+imagecutrow1: 0 
+imagecutcol: 0 
+refacity: false
+usewhite: false
+transfer_surround: true
+dynacut: false
+thre_low: -4
+thre_high: 4
+tx: 0
+ty: 0
+tz: 0
+troll: 0
+tpitch: 0
+tyaw: 0
+#14.9278 5.36157 0 -0.00388842 -0.0190796 -0.680204 0.732764
+init_x: 14.9278
+init_y: 5.36157
+init_z: 0
+init_rx: -0.00388842
+init_ry: -0.0190796
+init_rz: -0.680204
+init_rw: 0.732764

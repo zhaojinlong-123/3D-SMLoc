@@ -1,0 +1,8 @@
+<launch>
+    <!-- load Parameters -->
+    <rosparam file="$(find avp_slam_plus)/config/configFile.yaml" command="load" />
+   
+    <node name="ransac_point2line_connection" pkg="avp_slam_plus" type="ransac_point2line_connection" output="screen">
+    </node>
+
+</launch>

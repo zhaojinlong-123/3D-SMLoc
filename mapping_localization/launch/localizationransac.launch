@@ -1,0 +1,14 @@
+<launch>
+    <!-- load Parameters -->
+    <rosparam file="$(find avp_slam_plus)/config/configFile.yaml" command="load" />
+    <!-- generate point cloud from RGB image of multi cameras -->
+    <node name="pub_pointcloud" pkg="avp_slam_plus" type="pub_pointcloud" output="screen">
+    </node>
+
+　　 <!--  localization and mapping -->
+    <!--<node name="txt_localization" pkg="avp_slam_plus" type="txt_localization" output="screen">-->
+    <node name="localization" pkg="avp_slam_plus" type="localization" output="screen">
+    </node>
+
+
+</launch>

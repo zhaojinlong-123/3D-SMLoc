@@ -1,0 +1,53 @@
+imageRowIncrease: 1
+imageColIncrease: 1
+cameraRealiableDis: 8 
+pointCloudLeafSize: 0.2
+
+start_frame: 10
+end_frame: 4750
+run_mode: 1
+mapSave: true
+data_folder: "/home/zjl/semantic_3d_avp_ws/src/semantic_3d_avp/data/map_zjg2_2023-3-18/"
+scene: 3  #yt 1 zjg1 2 zjg2 3 yq 4
+save_directory: "/home/zjl/semantic_3d_avp_ws/src/semantic_3d_avp/data/map_zjg2_2023-3-18/"
+mapSaveLocation: "/home/zjl/semantic_3d_avp_ws/src/semantic_3d_avp/data/map_zjg2_2023-3-18/zjg2_2023-3-18-2.pcd" #-aligen-trans0.4
+
+odomKeyFramDisThresh: 0.1
+odomKeyFramAngThresh: 5
+InvalidColorThresh: 60
+#IcpMaximumIterations最大迭代次数 IcpMaxCorrespondenceDistance搜索对应点的最大距离 IcpTransformationEpsilon收敛条件，当前位姿与上次位姿插值 IcpEuclideanFitnessEpsilon均方误差和
+useICP: false
+IcpMaxCorrespondenceDistance: 10 #10 1
+IcpMaximumIterations: 100
+IcpTransformationEpsilon: 1e-8 #1e-8
+IcpEuclideanFitnessEpsilon: 1e-3 #0.01 #0.01
+icpFitnessScoreThresh: 2000
+useNDT: false
+uselidar: true
+myuseNDT_ICP: false
+useplane: true
+usemyICP: false
+#ndtResolution网格大小 
+ndtTransformationEpsilon: 0.01
+ndtResolution: 1.0
+ndtFitnessScoreThresh: 10
+useNDT_ICP: true
+useNDT_GICP: false
+useNDT_PICP: false
+use_sac_ndt: false
+useglobalfilter: true
+imagecutrow: 200
+imagecutrow1: 200
+imagecutcol: 100
+refacity: false
+usewhite: false
+transfer_surround: true
+dynacut: false
+thre_low: -4
+thre_high: 4
+tx: 0
+ty: 0
+tz: 0
+troll: 0
+tpitch: 0
+tyaw: 0

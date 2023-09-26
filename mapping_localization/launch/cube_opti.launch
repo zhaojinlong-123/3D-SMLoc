@@ -1,0 +1,21 @@
+<launch>
+    <!--  get images -->
+    <!--<node name="pubimage" pkg="semantic_3d_avp" type="pubimage" output="screen">
+    </node>-->
+
+    <!-- load Parameters -->
+    <rosparam file="$(find semantic_3d_avp)/config/cube_opti.yaml" command="load" />
+   
+    <!-- generate point cloud from RGB image of multi cameras -->
+    <!--<node name="pointCloudFromRGB" pkg="semantic_3d_avp" type="pointCloudFromRGB" output="screen">
+    </node>-->
+
+　　 <!--  localization and mapping -->
+    <!--<node name="localization_cube" pkg="semantic_3d_avp" type="localization_cube" output="screen">
+    </node>-->
+
+    <node name="pubpose" pkg="semantic_3d_avp" type="pubpose" output="screen">
+    </node>
+    <node name="pose_graph_optimizer" pkg="semantic_3d_avp" type="pose_graph_optimizer" output="screen">
+    </node>
+</launch>

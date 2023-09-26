@@ -1,0 +1,92 @@
+imageRowIncrease: 1
+imageColIncrease: 1
+cameraRealiableDis: 8 
+pointCloudLeafSize: 0.2
+#zjg1 280 4860
+#zjg2 130 6250
+#yq 3 4300
+#yt 99 11400
+#yt map 99-2400 local 2400 3570
+#ty map 3570-6470 local 6470 6950
+#yt map 6950-10400 local 10400 11400
+#yt map 10300-11400 local 11402 11880
+#zjg2 map 250-1620 local 1620-2040
+#zjg2 map 4100-5300 local 5300-6260
+#ytreloc map 10-140 local 140-325
+#yq1 2-380  yq2 2-343 yq3 2-275
+start_frame: 11400 #11400
+end_frame: 13252 #13252
+
+
+mapSave: true
+save_directory: "/home/zjl/avpslam_ws/src/AVP-SLAM-PLUS/avp_slam_plus/data/"
+mapSaveLocation: "/home/zjl/avpslam_ws/src/AVP-SLAM-PLUS/avp_slam_plus/data/2023-3-8/slam11400-13252-plane-p0.2-o0.1-aligen-trans0.4.pcd" #-aligen-trans0.4
+odomKeyFramDisThresh: 0.1 #0.1
+odomKeyFramAngThresh: 5
+InvalidColorThresh: 60
+#IcpMaximumIterations最大迭代次数 IcpMaxCorrespondenceDistance搜索对应点的最大距离 IcpTransformationEpsilon收敛条件，当前位姿与上次位姿插值 IcpEuclideanFitnessEpsilon均方误差和
+useICP: false
+IcpMaxCorrespondenceDistance: 10 #10 1
+IcpMaximumIterations: 100
+IcpTransformationEpsilon: 1e-8 #1e-8
+IcpEuclideanFitnessEpsilon: 1e-3 #0.01 #0.01
+icpFitnessScoreThresh: 2000
+useNDT: true
+uselidar: false
+myuseNDT_ICP: false
+useplane: true
+usemyICP: false
+#ndtResolution网格大小 
+ndtTransformationEpsilon: 0.01
+ndtResolution: 1.0
+ndtFitnessScoreThresh: 10
+useNDT_ICP: true
+useNDT_GICP: false
+useNDT_PICP: false
+use_sac_ndt: false
+useglobalfilter: true
+#zjg2 200 200 100
+#yt map 300 300 100 local 0
+imagecutrow: 0 #300 #600 
+imagecutrow1: 0 #300 #300
+imagecutcol: 0 #100
+refacity: false
+usewhite: false
+transfer_surround: true
+dynacut: false
+thre_low: -4
+thre_high: 4
+tx: 0
+ty: -0.4 #-0.4
+# 99-3570 -0.4 
+#3570-4550 -0.5
+#4550-6950 -0.3
+#6950-11400 -0.5
+#11400-13252 -0.4
+tz: 0
+troll: 0
+tpitch: 0
+tyaw: 0.05 #0.05
+
+txt_path: "/home/zjl/Desktop/parking/avp_data/parking_detection_txt/"
+
+#ransac param
+line_num: 10
+inner_part: 0.1
+dist: 0.1
+line_point_num: 20
+
+#ransac param connection
+line_num_c: 2
+inner_part_c: 0.3
+dist_c: 0.05
+line_point_num_c: 40
+area_filter: 400
+
+#vecotrmap
+vectormap_path: "/home/zjl/Desktop/parking/avp_data/lidar_map_fast_lio/ZJG2_vector_map/points.txt"
+
+#part best 
+# imagecutrow: 300
+# imagecutrow1: 300 
+# imagecutcol: 0 
