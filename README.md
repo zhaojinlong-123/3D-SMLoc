@@ -2,12 +2,12 @@
 A Novel Dataset and Framework for 3D Semantic Mapping and Long-Term Localization in Underground Parking Lots
 
 # 3D-SMLoc Overview
-- [Dataset Introduce](#1.DatasetIntroduce)
-- [Sensor specifications](#2.Sensorspecifications)
-- [Dataset structure](#3.Datasetstructure)
-- [Download instructions](#4.Downloadinstructions)
-- [Prerequisites](#5.Prerequisites)
-- [Building and examples](#6.Buildingandexamples)
+- [Dataset Introduce](#1-dataset-introduce)
+- [Sensor specifications](#2-sensor-specifications)
+- [Dataset structure](#3-dataset-structure)
+- [Download instructions](#4-download-instructions)
+- [Prerequisites](#5-prerequisites)
+- [Building and examples](6-building-and-examples)
 <br>
 
 
