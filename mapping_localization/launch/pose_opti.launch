@@ -1,8 +1,0 @@
-<launch>
-    <!-- load Parameters -->
-    <rosparam file="$(find semantic_3d_avp)/config/pose_opti.yaml" command="load" />
-    <node name="pubpose2" pkg="semantic_3d_avp" type="pubpose2" output="screen">
-    </node>
-    <node name="pose_graph_optimizer2" pkg="semantic_3d_avp" type="pose_graph_optimizer2" output="screen">
-    </node>
-</launch>

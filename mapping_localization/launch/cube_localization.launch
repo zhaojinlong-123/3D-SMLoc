@@ -1,5 +1,0 @@
-<launch>
-    <rosparam file="$(find semantic_3d_avp)/config/map_yt.yaml" command="load" />
-    <node name="object_map_node" pkg="semantic_3d_avp" type="object_map_node" output="screen">
-    </node>
-</launch>

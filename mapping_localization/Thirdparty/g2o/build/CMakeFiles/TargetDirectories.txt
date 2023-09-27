@@ -1,3 +1,0 @@
-/home/zjl/avpslam_ws/src/AVP-SLAM-PLUS/avp_slam_plus/Thirdparty/g2o/build/CMakeFiles/rebuild_cache.dir
-/home/zjl/avpslam_ws/src/AVP-SLAM-PLUS/avp_slam_plus/Thirdparty/g2o/build/CMakeFiles/g2o.dir
-/home/zjl/avpslam_ws/src/AVP-SLAM-PLUS/avp_slam_plus/Thirdparty/g2o/build/CMakeFiles/edit_cache.dir
